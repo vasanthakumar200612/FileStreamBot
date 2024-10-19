@@ -1,4 +1,7 @@
 services:
-  - name: "api"
+  - type: web
+    plan: free
+    name: FileStreamBot
+    runtime: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "python -m bot"
